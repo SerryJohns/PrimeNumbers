@@ -11,7 +11,7 @@ class TestPrimeNumbers(unittest.TestCase):
             self.assertIsInstance(my_number, int)
 
     def test_first_prime_number(self):
-        self.assertEqual(self.result[0:], 2)
+        self.assertEqual(self.result[0], 2)
 
     def test_prime_even(self):
         for my_number in self.result:

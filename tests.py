@@ -26,7 +26,7 @@ class TestPrimeNumbers(unittest.TestCase):
             self.assertFalse(my_number < 1)
 
     def list_length(self):
-        self.assertEqual(len(self.result), 8)
+        self.assertEqual(len(self.result), 7)
 
 if __name__ == '__main__':
     unittest.main()

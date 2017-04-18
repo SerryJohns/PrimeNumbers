@@ -8,7 +8,6 @@ def generate_prime_numbers(n):
 
     odd_list = [x for x in range(3, n + 1) if x % 2 != 0]
     odd_list = [2, 3] + [x for x in odd_list if x % 3 != 0]
-    count = 2
 
     for my_number in odd_list:
         for x in range(2, my_number + 1):
@@ -18,5 +17,3 @@ def generate_prime_numbers(n):
                 prime_list.append(my_number)
 
     return prime_list
-
-print(generate_prime_numbers(1))

@@ -4,14 +4,14 @@ from andelaSLC import prime
 class TestPrimeNumbers(unittest.TestCase):
 
     def setUp(self):
-        self.result = prime.generate_prime_numbers(10)
+        self.result = prime.generate_prime_numbers(20)
 
     def test_only_integers(self):
         for my_number in self.result:
             self.assertIsInstance(my_number, int)
 
     def test_first_prime_number(self):
-        self.assertequal(self.result[0:], 2)
+        self.assertEqual(self.result[0:], 2)
 
     def test_prime_even(self):
         for my_number in self.result:
@@ -24,6 +24,9 @@ class TestPrimeNumbers(unittest.TestCase):
     def test_negative_primes(self):
         for my_number in self.result:
             self.assertFalse(my_number < 1)
+
+    def list_length(self):
+        self.assertEqual(len(self.result), 8)
 
 if __name__ == '__main__':
     unittest.main()

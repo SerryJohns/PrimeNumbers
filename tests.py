@@ -6,6 +6,10 @@ class TestPrimeNumbers(unittest.TestCase):
     def setUp(self):
         self.result = prime.generate_prime_numbers(10)
 
+    def test_only_integers(self):
+        for my_number in self.result:
+            self.assertIsInstance(my_number, int)
+
     def test_first_prime_number(self):
         self.assertequal(self.result[0:], 2)
 

@@ -17,6 +17,9 @@ class TestPrimeNumbers(unittest.TestCase):
         for my_number in self.result:
             self.assertFalse(my_number > 3 and my_number % 3 == 0)
 
+    def test_negative_primes(self):
+        for my_number in self.result:
+            self.assertFalse(my_number < 1)
 
 if __name__ == '__main__':
     unittest.main()

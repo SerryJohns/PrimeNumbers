@@ -17,4 +17,3 @@ def generate_prime_numbers(n):
                 prime_list.append(my_number)
 
     return prime_list
-

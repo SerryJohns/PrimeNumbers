@@ -1,5 +1,5 @@
 import unittest
-from andelaSLC import prime
+from PrimeNumbers import prime
 
 class TestPrimeNumbers(unittest.TestCase):
 
